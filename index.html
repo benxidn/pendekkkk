@@ -148,48 +148,66 @@ html, body {
 }
 .block {
   display: flex;
-  margin: 10px;
-  background: silver;
+  margin: 0 10px;/*
+  background: green;*/
+  padding-top: 40px;
 }
 .box, 
 .box-none {
   width: 100%;/*
   flex: 1;*/
-  background: yellow;
-  margin: 10px;
-  border: 2px solid red;
+  background: #fff;
+  margin: 10px;/*
+  border: 2px solid orange;*/
   border-radius: 10px;/*
   display: flex;/*
   flex-direction: column;
   justify-content: space-between;*/
+  text-align: center;
+  position: relative;
+  border: 0;
+  box-shadow: 0 2px 7px #c3c3c3;
+  padding: 10px;
 }
 .box-none {/*
   opacity: 0.25;*/
 }
-.box h2, 
-.box-none h2 {
-  margin: 10px;
-  font-size: 13px;
-  font-weight: 500;
-  background: orange;
+.box .out {
+  position: relative;
+  top: -50px;
+  margin-bottom: -50px;
 }
+.box .ikon {
+  width: 100px;
+  max-width: 100%;
+  padding: auto;
+  position: relative;
+}
+.box h2, 
+.box-none h2,
 .box h3, 
 .box-none h3 {
-  margin: 10px;
+  margin: 5px 0;
   font-size: 13px;
   font-weight: 500;
-  background: green;
+}
+.box h2, 
+.box-none h2 {
+  opacity: 0.5;
 }
 .box p, 
-.box-none p {
+.box-none p {/*
   width: 100%;
-  border-top: 0.5px solid #000;
+  border-top: 0.5px solid #000;*/
   text-align: center;
   margin: 0;
+  margin-top: 5px;
   padding: 10px 0;
+  border-radius: 50px;
   font-size: 12px;
-  color: #000;/*
-  opacity: 0.3;*/
+  background: #ffa50036;
+  color: orange;
+  opacity: 10;
 }
 .box:hover {
   background: #FFF;
@@ -381,15 +399,40 @@ html, body {
       <div class="block">
         
         <div onclick="location.href='keygen/fakecez.html'" class="box">
-          <img class="#" src="file/p1.png" />
+          <div class="out">
+          <img class="ikon" src="file/logo.png" />
           <h2>Fakecez Modz</h2>
-          <h3>Apk Fakecez Modz New Patch 2023 Full Feature Anti Banned, Apk Fakecez Modz New Patch 2023 Full Feature Anti Banned</h3>
+          <h3>Apk Fakecez Modz New Patch 2023 Full Feature Anti Banned</h3>
+          </div>
           <p class="btn">DOWNLOAD</p>
         </div>
         <div onclick="location.href='keygen/dexter.html'" class="box">
-          <img class="#" src="file/p2.png" />
+          <div class="out">
+          <img class="ikon" src="file/logo.png" />
           <h2>Dimentod Modz</h2>
           <h3>Apk Dimentod Modz Full Feature</h3>
+          </div>
+          <p class="btn">DOWNLOAD</p>
+        </div>
+        
+      </div>
+      
+      <div class="block">
+        
+        <div onclick="location.href='keygen/fakecez.html'" class="box">
+          <div class="out">
+          <img class="ikon" src="file/logo.png" />
+          <h2>Fakecez Modz</h2>
+          <h3>Apk Fakecez Modz New Patch 2023 Full Feature Anti Banned</h3>
+          </div>
+          <p class="btn">DOWNLOAD</p>
+        </div>
+        <div onclick="location.href='keygen/dexter.html'" class="box">
+          <div class="out">
+          <img class="ikon" src="file/logo.png" />
+          <h2>Dimentod Modz</h2>
+          <h3>Apk Dimentod Modz Full Feature</h3>
+          </div>
           <p class="btn">DOWNLOAD</p>
         </div>
         
@@ -400,7 +443,7 @@ html, body {
 
   <div class="footer-area">
     <div class="deskripsi">
-      <img onclick="location.href='https://benxidn.github.io/'" width="150px" class="icon" src="file/iconn.png" />
+      <img onclick="location.href='https://benxidn.github.io/'" width="150px" class="icon" src="file/icon.png" />
       <p>Jangan lupa untuk support Admin dengan cara subscribe channel youtube Admin. Silahkan kalian subscribe karena subscribe itu gratis. </p>
       <!--wa--><i onclick="location.href='https://chat.whatsapp.com/CloyeGRTXVB2axmDgI53JG'" class="fa">&#xf232;</i>
       <!--tg--><i onclick="location.href='https://t.me/dextermodzz'" class="fa">&#xf2c6;</i>
