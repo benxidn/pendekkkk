@@ -1,1 +1,407 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Dexter Modz</title>
+  <link href="css/style.css" rel="stylesheet">
+  <link href="file/logo.png" rel="shortcut icon">
+</head>
+<style>
+html, body {
+  margin: 0 auto;
+  max-width: 393px;
+  font-family: poppins;
+  user-select: none;
+  background: #FFF;
+  color: #000;
+}
+.off {
+  pointer-events: none;
+  cursor: default;
+}
+.header {
+  width: 393px;
+  position: sticky;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  background: #FFF;
+  box-shadow: 0 0 3px #c3c3c3;
+  z-index: 1;
+}
+.icon {
+  margin: 15px;
+  margin-right: auto;
+  width: 175px;
+}
+.btn-yt {
+  border: 0;
+  padding: 10px 13px;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 12px;
+  margin: 15px;
+  background: orange;
+  color: #fff;
+}
+.icon:hover,
+.btn-yt:hover, 
+.btn-donasi:hover {
+  opacity: 0.75;
+}
+.profil {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.my {
+  background: #263646;
+  border-radius: 100%;
+}
+.logo {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 5px;
+}
+.profil h1, 
+.profil h2, 
+.profil p {
+  margin: 0;
+}
+.profil h1 {
+  font-size: 22px;
+}
+.profil h2 {
+  font-size: 15px;
+}
+.profil p {
+  font-size: 14px;
+  margin: 15px;
+}
+.btn-donasi {
+  border: 0;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 13px;
+  background: #0091ff;
+  color: #fff;
+}
 
+.slide, .bg-area {
+  background: #fff;
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 0 2px 7px #c3c3c3;
+}
+.upper {
+  background: red;
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+}
+.slidesc {
+  padding: 10px;
+  padding-top: 7px;
+  /*background: yellow;*/
+}
+.slidesc h6 {
+  margin: 0;
+  color: orange;
+  font-size: 11px;
+  margin-bottom: 5px;
+}
+.slidesc h5 {
+  margin: 0;
+  font-size: 15px;
+}
+
+.bg-area h1 {
+  margin: 10px;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+}
+.bg-area h1 .num {
+  background: #202A36;
+  padding: 3px 10px;
+  border-radius: 7px;
+  font-style: normal;
+  margin-right: 10px;
+}
+.block {
+  display: flex;
+}
+.box, 
+.box-none {
+  width: 100%;
+  flex: 1;
+  background: #202A36;
+  margin: 10px;
+  border: 2px solid #64727F;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.box-none {
+  opacity: 0.25;
+}
+.box h2, 
+.box-none h2 {
+  margin: 10px;
+  font-size: 13px;
+  font-weight: 500;
+}
+.box p, 
+.box-none p {
+  width: 100%;
+  border-top: 0.5px solid #FFF;
+  text-align: center;
+  margin: 0;
+  padding: 10px 0;
+  font-size: 12px;
+  color: #FFF;
+  opacity: 0.3;
+}
+.box:hover {
+  background: #FFF;
+  color: #202A36;
+  border-color: #0A4975;
+}
+.box:hover p {
+  color: #202A36;
+  border-color: #202A36;
+}
+.deskripsi {
+  margin: 50px 0;
+}
+.deskripsi p {
+  text-align: justify;
+  font-size: 14px;
+}
+.deskripsi h1 {
+  font-size: 20px;
+  margin: 30px 0 20px;
+}
+.fa, 
+.fab {
+  font-size: 30px;
+  margin-right: 15px;
+}
+.fa:hover,
+.fab:hover {
+  opacity: 0.5;
+}
+.footer {
+  width: 100%;
+  background: #202A36;
+  box-shadow: 0 0 10px 0 #161A1E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer p {
+  margin: 20px 0;
+  font-size: 13px;
+}
+.profil,
+.bg-area {
+  margin: 15px;
+}
+.deskripsi {
+  margin: 50px 15px;
+}
+.deskripsi .icon {
+ margin-left: 0;
+}
+.content {
+  min-height: calc(100vh - 50px);
+}
+
+/*MENU PAGE*/
+
+.content.products p {
+  text-align: center;
+  margin: 15px;
+}
+.container {
+  margin: 15px;
+}
+.container.vip {
+  text-align: center;
+}
+.container h1 {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+.container.vip h1 {
+  font-size: 20px;
+  margin: 10px;
+}
+.container.vip p {
+  font-size: 14px;
+  margin: 0;
+}
+.icon-vip {
+  width: 100px;
+  border-radius: 10px;
+  border: 2px solid #fff;
+  background: #263646;
+}
+.img-vip {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 5px;
+  background: #263646;
+}
+.vid-content {
+  width: 100%;
+  height: 200px;
+  background: #263646;
+}
+.bg-area.products {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+}
+.bg-area.products h1 {
+  margin: 0;
+  margin-bottom: 5px;
+}
+.bg-area.products p {
+  margin: 0;
+  margin-top: 10px;
+  font-size: 13px;
+  background: #05B962;
+  padding: 10px;
+  border-radius: 5px;
+  color: #263646;
+  font-style: italic;
+  margin: 15px 0 5px;
+}
+.bg-area.products h3 {
+  margin: 0;
+  margin-top: 10px;
+}
+.bg-area.products h5 {
+  margin: 0;
+  margin-top: 10px;
+  font-weight: normal;
+  text-align: justify;
+}
+.bg-area.products p {
+  background: #ec9800;
+}
+.btn-unduh,
+.btn-order {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  margin: 0;
+  margin-top: 10px;
+  color: #FFF;
+  background: #202A36;
+  border: 2px solid #64727F;
+  border-radius: 10px;
+  font-size: 12px;
+}
+.btn-order {
+  border: 0;
+  background: #00bc62;
+  font-size: 14px;
+  font-weight: bold;
+}
+.btn-unduh:hover {
+  background: #FFF;
+  color: #202A36;
+  border-color: #0A4975;
+}
+.btn-order:hover {
+  background: #00ed7b;
+}
+.fa.sin {
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+</style>
+<body>
+  <div class="header">
+    <img onclick="location.href='https://benxidn.github.io/'" class="icon" src="file/icon.png" />
+    <button class="btn-yt" onclick="Channel()">SUBSCRIBE</button>
+  </div>
+  
+<!--CONTENT-->
+  
+  <div class="content">
+    <!--div class="profil">
+      <img class="my logo off" src="file/logo.png" />
+      <!--<h1>DEXTER MODZ</h1>
+      <h2>MOBILE LEGENDS CHEAT</h2>
+      <!--<button onclick="location.href='https://saweria.co/dextermodz'" class="btn-donasi">KIRIM DONASI</button>
+    </div-->
+     
+<!--APK KEYGEN-->
+      
+    <div class="slide">
+      <img class="upper" src="file/banner.png" />
+      <img class="upper" src="file/icon.png" />
+      <div class="slidesc">
+        <h6>PENDEKAR DIMENSI</h6>
+        <h5>Menyediakan Cheat Mobile Legends Terlengkap, Terbaru & Gratis Buat Kalian.</h5>        
+      </div>
+    </div>
+      
+    <!--div class="bg-area"-->
+      <h1>Mod Menu MLBB</h1>
+      <div class="block">
+        <div onclick="location.href='keygen/fakecez.html'" class="box">
+          <img class="#" src="file/p1.png" />
+          <h2>Fakecez Modz</h2>
+          <p class="btn">Apk Fakecez Modz Full Feature</p>
+          <button onclick="P()" class="btn">Download</button>
+        </div>
+        <div onclick="location.href='keygen/dexter.html'" class="box">
+          <img class="#" src="file/p2.png" />
+          <h2>Dimentod Modz</h2>
+          <p class="btn">Apk Dimentod Modz Full Feature</p>
+          <button onclick="P()" class="btn">Download</button>
+        </div>
+      </div>
+    </div>
+    
+<!--FOOTER-->
+
+  <div class="footer-area">
+    <div class="deskripsi">
+      <img onclick="location.href='https://benxidn.github.io/'" width="150px" class="icon" src="file/iconn.png" />
+      <p>Jangan lupa untuk support Admin dengan cara subscribe channel youtube Admin. Silahkan kalian subscribe karena subscribe itu gratis. </p>
+      <!--wa--><i onclick="location.href='https://chat.whatsapp.com/CloyeGRTXVB2axmDgI53JG'" class="fa">&#xf232;</i>
+      <!--tg--><i onclick="location.href='https://t.me/dextermodzz'" class="fa">&#xf2c6;</i>
+      <!--yt--><i onclick="Channel()" class="fa">&#xf167;</i>
+      <!--fb--><i onclick="location.href='https://www.facebook.com/dextermodzid'" class="fa">&#xf09a;</i>
+      <!--ig--><i onclick="location.href='https://www.instagram.com/dextermodzz'" class="fa">&#xf16d;</i>
+    </div>
+    <div class="footer">
+      <p>Copyright © 2023, Pendekar Dimensi</p>
+    </div>
+  </div>
+  
+<!--JS-->
+
+<script>
+function P() {
+  alert("Belum tersedia untuk saat ini!\nCoba lagi nanti!");
+}
+</script>
+<script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+</script>
+<script src="https://benxidn.github.io/link/my-link.js">
+</script>
+</body>
+</html>
